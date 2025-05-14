@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="cell" data-row = 0 data-col = 0></div>
+        <div class="cell" data-row = 0 data-col = 1></div>
+        <div class="cell" data-row = 0 data-col = 2></div>
+        <div class="cell" data-row = 1 data-col = 0></div>
+        <div class="cell" data-row = 1 data-col = 1></div>
+        <div class="cell" data-row = 1 data-col = 2></div>
+        <div class="cell" data-row = 2 data-col = 0></div>
+        <div class="cell" data-row = 2 data-col = 1></div>
+        <div class="cell" data-row = 2 data-col = 2></div>
+    </div>
+    <fieldset>
+        <form action="" method="post" id="player1">
+            <p>Who will play O?</p>
+            <label for="name">enter name: </label>
+            <input type="text" name="name" id="name" class="name">
+            <button type="button">Set player 1</button>
+        </form>
+        <form action="" method="post" id="player2">
+            <p>Who will play X?</p>
+            <label for="name">enter name: </label>
+            <input type="text" name="name" id="name" class="name">
+            <button type="button">Set player 2</button>
+        </form>
+        <p class="currTurn"></p>
+    </fieldset>
+    <div class="youwin invisible">
+        <p></p>
+        <button type="button">Play again</button>
+    </div>
+</body>
+<script src="/TOPStuff/repos/TOP_TicTacToe/tictactoe.js"></script>
+</html>
